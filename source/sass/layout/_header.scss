@@ -1,0 +1,82 @@
+header.site_header{
+    .container{
+        .header_wrap{
+            .header_top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0;
+                background-color: $cmain;
+                box-shadow: 0 0 0 100vmax $cmain;
+                clip-path: inset(0 -100vmax);
+                color: $cwhite;
+                .header_top_left{
+                    ul{
+                        @extend .no-list;
+                        display: flex;
+                        align-items: center;
+                        li{
+                            margin-right: 40px;
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                            a{
+                                display: flex;
+                                align-items: center;
+                                color: $cwhite;
+                                i{
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .header_top_right{
+                    ul{
+                        @extend .no-list;
+                        display: flex;
+                        align-items: center;
+                        li{
+                            margin-right: 40px;
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                            a{
+                                color: $cwhite;
+                            }
+                        }
+                    }
+                }
+            }
+            .header_bottom{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 20px 0;
+                .logo{
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-start;
+                    a{
+                        img{
+    
+                        }
+                    }
+                }
+                .header_menu{
+    
+                }
+                .header_button{
+                    .theme_button{
+                        a{
+                            padding: 10px 85px;
+                            i{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -76,10 +76,10 @@ div.socials{
 // Socials
 // Container
 div.container{
-	width: Min(calc(80% - 2rem), 90rem);
+	width: Min(calc(80vw - 2rem), 90rem);
 	margin-inline: auto;
 	@media(max-width: 1024px){
-		width: Min(calc(100% - 2rem), 90rem);
+		width: Min(calc(100vw - 2rem), 90rem);
 	}
 }
 // Container
@@ -118,5 +118,121 @@ div.container{
 		width: 100%;
 		padding: 10px 0;
 		background: $ccorp;
+	}
+}
+
+.page_title{
+	margin-bottom: 25px;
+	font-size: 50px;
+	font-weight: 700;
+}
+.page_subtitle{
+	margin-bottom: 30px;
+	font-size: 42px;
+	color: $ccorp;
+}
+.section_title{
+	margin-bottom: 15px;
+	font-size: 22px;
+	color: $ccorp;
+	font-weight: 700;
+}
+.subtitle{
+	margin-bottom: 15px;
+	font-size: 36px;
+	font-weight: 700;
+	color: $cdark;
+}
+.section_text{
+	font-size: 16px;
+	&.center{
+		text-align: center;
+	}
+}
+.section_list{
+	ul{
+		@extend .no-list;
+		li{
+
+		}
+	}
+}
+.theme_button{
+	a{
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px 25px;
+		font-size: 18px;
+		color: $cdark;
+		text-transform: uppercase;
+		background-color: $ccorp;
+		color: $cwhite;
+		i{
+			margin-right: 10px;
+		}
+	}
+	&.gray{
+		a{
+			background-color: transparent;
+			background-image: linear-gradient(to right, #DDDDDD,#CECECE);
+			color: $cdark;
+		}
+	}
+	&.black{
+		a{
+			background-color: $cdark;
+			color: $cwhite;
+		}
+	}
+	&.oblique_both{
+		a{
+			padding: 10px 45px;
+			clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+		}
+	}
+	&.oblique_right{
+		a{
+			padding: 10px 45px 10px 25px;
+			clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+		}
+	}
+	&.text{
+		a{
+			background-color: transparent;
+			color: $cdark;
+			text-transform: none;
+			i{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background-color: $ccorp;
+				color: $cwhite;
+				font-size: 16px;
+			}
+		}
+		&.black{
+			a{
+				i{
+					background-color: $cdark;
+				}
+			}
+		}
+	}
+}
+.section_buttons{
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+	.theme_button{
+		&:first-child{
+			margin-right: 20px;
+		}
+	}
+	&.center{
+		justify-content: center;
 	}
 }

@@ -45,50 +45,76 @@
 
 <header class="trans-all-4 site_header">
 	<div class="container">
-		<div class="header_top">
-			<div class="header_top_left">
-				<ul>
-					<li>
-						<a href="tel:<?php echo $phone ?>">
-							<i class="ri-phone-fill"></i>
-							<span>Phone: <?php echo $phoneVisible ?></span>
-						</a>
-					</li>
-					<li>
-						<a href="mailto:<?php echo $email ?>">
-							<i class="ri-mail-fill"></i>
-							<span>Email: <?php echo $email ?></span>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:void(0)" class="no_link">
-							<i class="ri-time-fill"></i>
-							<span>Hours: <?php echo $workingHours ?></span>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="header_top_right">
-				<ul>
-					<li>
-						<a href="#">Reviews</a>
-					</li>
-					<li>
-						<a href="#">Pricing</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="header_bottom">
-			<div class="logo">
-				<a href="/">
-					<img src="images/logo.png" alt="Logo">
-				</a>
-			</div>
-			<div class="header_menu">
-				
-			</div>
-		</div>
+		<div class="header_wrap">
+            <div class="header_top">
+                <div class="header_top_left">
+                    <ul>
+                        <li>
+                            <a href="tel:<?php echo $phone ?>">
+                                <i class="ri-phone-fill"></i>
+                                <span>Phone: <?php echo $phoneVisible ?></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:<?php echo $email ?>">
+                                <i class="ri-mail-fill"></i>
+                                <span>Email: <?php echo $email ?></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" class="no_link">
+                                <i class="ri-time-fill"></i>
+                                <span>Hours: <?php echo $workingHours ?></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_top_right">
+                    <ul>
+                        <li>
+                            <a href="#">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <div class="logo">
+                    <a href="/">
+                        <img src="images/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="header_menu">
+                    <nav class="navigation">
+                        <ul class="">
+                            <li>
+                                <a href="">About Us</a>
+                            </li>
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="">Locksmith Services</a>
+                            </li>
+                            <li>
+                                <a href="">Contacts</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_button">
+                    <div class="theme_button oblique_both">
+                        <a href="tel:<?php echo $phone ?>">
+                            <i class="ri-phone-fill"></i>
+                            <span>Call now <br> <?php echo $phoneVisible ?></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</div>
 </header>
 
@@ -100,17 +126,20 @@
         <div class="container">
             <div class="hero_wrap">
                 <div class="hero_text">
-                    <h1 class="page_title">Fast and professional <span>local locksmith</span></h1>
-                    <div class="subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</div>
-                    <div class="section_buttons">
-                        <div class="theme_button oblique_both gray">
-                            <a href="tel:<?php echo $phone ?>">Call Us</a>
-                        </div>
-                        <div class="theme_button text black">
-                            <a href="tel:<?php echo $phone ?>">
-                                <i class="ri-arrow-right-line"></i>
-                                <span>Get a free quote</span>
-                            </a>
+                    <div class="text_wrap">
+                        <h1 class="page_title">Capital Locksmith in Seattle</h1>
+                        <div class="page_subtitle">24 HOUR & MOBILE SEATTLE LOCKSMITH</div>
+                        <div class="section_text center">Insured, Bonded, Licensed</div>
+                        <div class="section_buttons center">
+                            <div class="theme_button oblique_both gray">
+                                <a href="tel:<?php echo $phone ?>">Call Us</a>
+                            </div>
+                            <div class="theme_button text black">
+                                <a href="tel:<?php echo $phone ?>">
+                                    <i class="ri-arrow-right-line"></i>
+                                    <span>Get a free quote</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,15 +175,21 @@
                             </div>
                         </div>
                         <div class="swiper_natigation">
-                            <div class="swiper-button-next swiper_arrow"></div>
                             <div class="swiper-button-prev swiper_arrow"></div>
+                            <div class="swiper-button-next swiper_arrow"></div>
                         </div>
                     </div>
                 </div>
                 <div class="about_right">
                     <h2 class="section_title">About Us</h2>
-                    <h3 class="subtitle">Lorem ipsum dolor sit amet.</h3>
-                    <div class="section_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusantium, enim recusandae provident saepe velit modi error doloremque tempore dolor aperiam consectetur autem eum blanditiis sed beatae ea asperiores repellendus.</div>
+                    <h3 class="subtitle">Your Trusted Local Seattle Locksmith Company.</h3>
+                    <div class="section_text">
+						<p >If you need a locksmith, look no further than Capital Locksmith.</p>
+                        <p >We are a trusted local and mobile locksmith provider in Seattle WA and the surrounding area.</p>
+                        <p>Our mobile locksmith services are available 24 hours a day, 7 days a week, so we are always here when you need us.</p>
+                        <p>We offer <a href="https://capital-locksmith.net/residential-locksmith/"><strong>Residential locksmith</strong></a>, <a href="https://capital-locksmith.net/commercial-locksmith/"><strong>Commercial locksmith</strong></a>, and <a href="https://capital-locksmith.net/auto-locksmith/"><strong>Auto locksmiths</strong></a>, as well as <a href="https://capital-locksmith.net/emergency-locksmith/"><strong>24 Hour emergency locksmith service</strong></a>.</p>
+                        <p>We have years of experience in the locksmith industry and can handle any situation that comes our way.</p>
+					</div>
                     <div class="section_list">
                         <ul>
                             <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>

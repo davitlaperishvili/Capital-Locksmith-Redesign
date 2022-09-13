@@ -15,10 +15,10 @@ nav.navigation{
 			}
 			> a{
 				@extend .trans-4;
-				color: $cwhite;
+				color: $cmain;
 				font-size: 16px;
 				font-family: $ffbase;
-				font-weight: 400;
+				font-weight: 700;
 			}
 			&.menu-item-has-children{
 				display: flex;

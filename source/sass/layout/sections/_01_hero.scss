@@ -1,0 +1,75 @@
+section.hero{
+    margin-bottom: 140px;
+    figure.section_bg{
+        @extend .overlay;
+        z-index: 2;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &:after{
+        @extend .overlay;
+        top: unset;
+        left: unset;
+        bottom: -65px;
+        right: 0;
+        background-color: $ccorp;
+        width: 100%;
+    }
+    .container{
+        z-index: 3;
+        .hero_wrap{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 80px 0;
+            &:before{
+                @extend .overlay;
+                background-color: rgba($cmain, 0.15);
+                top: unset;
+                bottom: -65px;
+                left: -55px;
+                clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
+                transform: translateX(calc(-100vw + Min(calc(85vw - 2rem), 90rem)));
+                z-index: 3;
+            }
+            &:after{
+                @extend .overlay;
+                background-color: $cwhite;
+                top: unset;
+                bottom: -65px;
+                left: -50px;
+                clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
+                transform: translateX(calc(-100vw + Min(calc(85vw - 2rem), 90rem)));
+                z-index: 2;
+            }
+            .hero_text{
+                text-align: center;
+                position: static;
+                z-index: 4;
+                &:before{
+                    @extend .overlay;
+                    background-image: linear-gradient(to bottom, rgba(#252424, 0.4), rgba(#6D6C6C, 0));
+                    clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
+                    transform: translateX(calc(-100vw + Min(calc(85vw - 2rem), 90rem)));
+                    z-index: 2;
+                }
+                &:after{
+                    @extend .overlay;
+                    background-color: $cwhite;
+                    clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
+                    transform: translateX(calc(-100vw + Min(calc(85vw - 2rem), 90rem)));
+                    z-index: 1;
+                }
+                .text_wrap{
+                    z-index: 3;
+                }
+            }
+            figure.car{
+                z-index: 5;
+            }
+        }
+    }
+}

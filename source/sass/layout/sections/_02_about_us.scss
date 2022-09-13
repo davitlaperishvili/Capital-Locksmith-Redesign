@@ -1,0 +1,73 @@
+section.about_us{
+    margin-bottom: 150px;
+    .container{
+        .about_wrap{
+            display: grid;
+            grid-gap: 70px;
+            grid-template-columns: 480px 1fr;
+            .about_left{
+                display: block;
+                width: 100%;
+                .about_slider{
+                    max-width: 100%;
+                    .swiper-slide{
+                        figure{
+                            padding: 0 0 50px 70px;
+                            height: 505px;
+                            &:before{
+                                @extend .overlay;
+                                top: 50px;
+                                height: calc(100% - 50px);
+                                background-color: #EEEEEE;
+                            }
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                            figcaption{
+                                display: flex;
+                                align-items: center;
+                                height: 50px;
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                    .swiper_natigation{
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        padding: 0 20px;
+                        background-color: #EEEEEE;
+                        height: 50px;
+                        z-index: 3;
+                        .swiper_arrow {
+                            position: relative;
+                            top: unset;
+                            left: unset;
+                            right: unset;
+                            bottom: unset;
+                            margin-top: 0;
+                            &:after{
+                                content: "\EA6C";
+                                font-size: 20px;
+                                font-family: $ffremix;
+                                color: $cdark;
+                            }
+                            &.swiper-button-prev{
+                                &:after{
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .about_right{
+
+            }
+        }
+    }
+}
