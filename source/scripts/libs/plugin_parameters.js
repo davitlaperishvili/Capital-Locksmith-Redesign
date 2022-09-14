@@ -14,12 +14,18 @@ export default function plugindParameters() {
 	// Slider
 	let about_us_slider = new Swiper(".about_slider", {
 		slidesPerView: 1,
+		autoplay: {
+			dalay: 3000,
+		},
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
 	});
 	let reviews_slider = new Swiper(".reviews_slider", {
+		autoplay: {
+			dalay: 3000,
+		},
 		slidesPerView: 1,
 		pagination: {
 			el: ".swiper-pagination",

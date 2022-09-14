@@ -1,0 +1,72 @@
+footer.site_footer{
+    background-color: $cmain;
+    padding: 60px 0;
+    .container{
+        color: $cwhite;
+        .footer_full_width_block{
+            margin-bottom: 60px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &.footer_columns{
+                display: flex;
+                gap: 100px;
+                .column{
+                    flex: 1;
+                    .logo{
+                        margin-bottom: 40px;
+                    }
+                    .footer_contact_info{
+                        ul{
+                            @extend .no-list;
+                            li{
+                                a{
+                                    display: flex;
+                                    align-items: center;
+                                    color: $cwhite;
+                                    i{
+                                        margin-right: 10px;
+                                    }
+                                    span{
+    
+                                    }
+                                    &:hover{
+                                        opacity: 0.7;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .footer_text{
+                        .text_title{
+                            margin-bottom: 20px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            .footer_menu{
+                display: flex;
+                justify-content: center;
+                ul{
+                    @extend .no-list;
+                    display: flex;
+                    justify-content: center;
+                    gap: 50px;
+                    li{
+                        a{
+                            color: $cwhite;
+                            &:hover{
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright{
+                text-align: center;
+                color: $cwhite;
+            }
+        }
+    }
+}

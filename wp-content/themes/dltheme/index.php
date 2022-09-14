@@ -211,92 +211,98 @@
     </section>
     <section class="services">
         <div class="container">
-            <h2 class="section_title">Services</h2>
-            <h3 class="subtitle white">All services we provide</h3>
-            <div class="services_list">
-                <div class="service_item">
-                    <figure>
-                        <img src="images/service1.jpg" alt="">
-                    </figure>
-                    <div class="service_title">EMERGENCY</div>
-                    <div class="service_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repudiandae rem, nulla totam corrupti amet perspiciatis similique, impedit sint voluptate voluptates, quas harum saepe? Aliquid quam dicta temporibus illum voluptate.</div>
-                </div>
-                <div class="service_item">
-                    <figure>
-                        <img src="images/service2.jpg" alt="">
-                    </figure>
-                    <div class="service_title">Residential</div>
-                    <div class="service_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repudiandae rem, nulla totam corrupti amet perspiciatis similique, impedit sint voluptate voluptates, quas harum saepe? Aliquid quam dicta temporibus illum voluptate.</div>
-                </div>
-                <div class="service_item">
-                    <figure>
-                        <img src="images/service3.jpg" alt="">
-                    </figure>
-                    <div class="service_title">Commercial</div>
-                    <div class="service_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repudiandae rem, nulla totam corrupti amet perspiciatis similique, impedit sint voluptate voluptates, quas harum saepe? Aliquid quam dicta temporibus illum voluptate.</div>
-                </div>
-                <div class="service_item">
-                    <figure>
-                        <img src="images/service4.jpg" alt="">
-                    </figure>
-                    <div class="service_title">Automotive</div>
-                    <div class="service_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repudiandae rem, nulla totam corrupti amet perspiciatis similique, impedit sint voluptate voluptates, quas harum saepe? Aliquid quam dicta temporibus illum voluptate.</div>
+            <div class="section_wrap">
+                <h2 class="section_title center">Services</h2>
+                <h3 class="subtitle white center">All services we provide</h3>
+                <div class="services_list">
+                    <div class="service_item">
+                        <figure>
+                            <img src="images/service1.jpg" alt="">
+                        </figure>
+                        <div class="service_title">EMERGENCY</div>
+                        <div class="service_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repudiandae rem, nulla totam corrupti amet perspiciatis similique, impedit sint voluptate voluptates, quas harum saepe? Aliquid quam dicta temporibus illum voluptate.</div>
+                    </div>
+                    <div class="service_item">
+                        <figure>
+                            <img src="images/service2.jpg" alt="">
+                        </figure>
+                        <div class="service_title">Residential</div>
+                        <div class="service_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repudiandae rem, nulla totam corrupti amet perspiciatis similique, impedit sint voluptate voluptates, quas harum saepe? Aliquid quam dicta temporibus illum voluptate.</div>
+                    </div>
+                    <div class="service_item">
+                        <figure>
+                            <img src="images/service3.jpg" alt="">
+                        </figure>
+                        <div class="service_title">Commercial</div>
+                        <div class="service_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repudiandae rem, nulla totam corrupti amet perspiciatis similique, impedit sint voluptate voluptates, quas harum saepe? Aliquid quam dicta temporibus illum voluptate.</div>
+                    </div>
+                    <div class="service_item">
+                        <figure>
+                            <img src="images/service4.jpg" alt="">
+                        </figure>
+                        <div class="service_title">Automotive</div>
+                        <div class="service_desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repudiandae rem, nulla totam corrupti amet perspiciatis similique, impedit sint voluptate voluptates, quas harum saepe? Aliquid quam dicta temporibus illum voluptate.</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="benefits">
         <div class="container">
-            <div class="section_left">
-                <h2 class="section_title">Benefits</h2>
-                <div class="subtitle">Why Our Locksmith?</div>
-                <div class="section_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis possimus dolorum quos accusantium quibusdam, consectetur unde consequuntur reiciendis, necessitatibus, eveniet voluptatum maiores architecto? Numquam, ullam quibusdam ipsum commodi corporis cupiditate.</div>
-                <div class="section_list with_line">
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                    </ul>
+            <div class="section_wrap">
+                <div class="section_left">
+                    <h2 class="section_title">Benefits</h2>
+                    <div class="subtitle">Why Our Locksmith?</div>
+                    <div class="section_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis possimus dolorum quos accusantium quibusdam, consectetur unde consequuntur reiciendis, necessitatibus, eveniet voluptatum maiores architecto? Numquam, ullam quibusdam ipsum commodi corporis cupiditate.</div>
+                    <div class="section_list with_line">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </li>
+                            <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </li>
+                            <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </li>
+                            <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </li>
+                        </ul>
+                    </div>
+                    <div class="section_buttons">
+                        <div class="theme_button oblique_right">
+                            <a href="tel:<?php echo $phone ?>">
+                                <i class="ri-phone-fill"></i>
+                                <span>(206) 208-6786</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="theme_button oblique_right">
-                    <a href="tel:<?php echo $phone ?>">
-                        <i class="ri-phone-fill"></i>
-                        <span>(206) 208-6786</span>
-                    </a>
-                </div>
-            </div>
-            <div class="section_right">
-                <div class="benefits_list">
-                    <div class="benefit_item">
-                        <div class="benefit_title">
-                            <img src="images/benefit1.png" alt="">
-                            <span>Works 24/7</span>
+                <div class="section_right">
+                    <div class="benefits_list">
+                        <div class="benefit_item">
+                            <div class="benefit_title">
+                                <img src="images/benefit1.png" alt="">
+                                <span>Works 24/7</span>
+                            </div>
+                            <div class="benefit_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid voluptate dolorem cumque, molestias optio.`</div>
                         </div>
-                        <div class="benefit_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid voluptate dolorem cumque, molestias optio.`</div>
-                    </div>
-                    <div class="benefit_item">
-                        <div class="benefit_title">
-                            <img src="images/benefit2.png" alt="">
-                            <span>Great prices</span>
+                        <div class="benefit_item">
+                            <div class="benefit_title">
+                                <img src="images/benefit2.png" alt="">
+                                <span>Great prices</span>
+                            </div>
+                            <div class="benefit_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid voluptate dolorem cumque, molestias optio.`</div>
                         </div>
-                        <div class="benefit_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid voluptate dolorem cumque, molestias optio.`</div>
-                    </div>
-                    <div class="benefit_item">
-                        <div class="benefit_title">
-                            <img src="images/benefit3.png" alt="">
-                            <span>Fully mobile</span>
+                        <div class="benefit_item">
+                            <div class="benefit_title">
+                                <img src="images/benefit3.png" alt="">
+                                <span>Fully mobile</span>
+                            </div>
+                            <div class="benefit_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid voluptate dolorem cumque, molestias optio.`</div>
                         </div>
-                        <div class="benefit_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid voluptate dolorem cumque, molestias optio.`</div>
-                    </div>
-                    <div class="benefit_item">
-                        <div class="benefit_title">
-                            <img src="images/benefit4.png" alt="">
-                            <span>Emergency</span>
+                        <div class="benefit_item">
+                            <div class="benefit_title">
+                                <img src="images/benefit4.png" alt="">
+                                <span>Emergency</span>
+                            </div>
+                            <div class="benefit_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid voluptate dolorem cumque, molestias optio.`</div>
                         </div>
-                        <div class="benefit_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro aliquid voluptate dolorem cumque, molestias optio.`</div>
+                        
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -307,7 +313,7 @@
         </figure>
         <div class="section_right">
             <h2 class="section_title">Reviews</h2>
-            <div class="subtitle">What they say about locksmith?</div>
+            <div class="subtitle">What they say <br> about locksmith?</div>
             <div class="reviews_list">
                 <div class="reviews_slider swiper">
                     <div class="swiper-wrapper">
@@ -379,9 +385,6 @@
     </section>
     <section class="areas">
         <div class="container">
-            <figure>
-                <img src="images/map.png" alt="">
-            </figure>
             <div class="section_left">
                 <h2 class="section_title">Areas</h2>
                 <div class="subtitle">SERVE AREAS</div>
@@ -390,47 +393,70 @@
             <div class="section_right">
                 <ul>
                     <li>
-                        <img src="images/pin.png" alt="">
-                        <span>Seattle</span>
+                        <a href="">
+                            <img src="images/pin.png" alt="">
+                            <span>Seattle</span>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/pin.png" alt="">
-                        <span>Everett</span>
+                        <a href="">
+                            <img src="images/pin.png" alt="">
+                            <span>Everett</span>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/pin.png" alt="">
-                        <span>Redmond</span>
+                        <a href="">
+                            <img src="images/pin.png" alt="">
+                            <span>Redmond</span>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/pin.png" alt="">
-                        <span>Tacoma</span>
+                        <a href="">
+                            <img src="images/pin.png" alt="">
+                            <span>Tacoma</span>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/pin.png" alt="">
-                        <span>Bellevue</span>
+                        <a href="">
+                            <img src="images/pin.png" alt="">
+                            <span>Bellevue</span>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/pin.png" alt="">
-                        <span>Renton</span>
+                        <a href="">
+                            <img src="images/pin.png" alt="">
+                            <span>Renton</span>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/pin.png" alt="">
-                        <span>Washington</span>
+                        <a href="">
+                            <img src="images/pin.png" alt="">
+                            <span>Washington</span>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/pin.png" alt="">
-                        <span>Kirkland</span>
+                        <a href="">
+                            <img src="images/pin.png" alt="">
+                            <span>Kirkland</span>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/pin.png" alt="">
-                        <span>Lake City</span>
+                        <a href="">
+                            <img src="images/pin.png" alt="">
+                            <span>Lake City</span>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/pin.png" alt="">
-                        <span>Bothell</span>
+                        <a href="">
+                            <img src="images/pin.png" alt="">
+                            <span>Bothell</span>
+                        </a>
                     </li>
                 </ul>
             </div>
+            <figure>
+                <img src="images/map.png" alt="">
+            </figure>
         </div>
     </section>
     <section class="all_services">
@@ -518,10 +544,13 @@
         </div>
     </section>
     <section class="banner">
+        <figure>
+            <img src="images/banner.jpg" alt="">
+        </figure>
         <div class="container">
             <h3 class="banner_title">Professionals with 15 years of experience</h3>
             <div class="section_text center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quaerat pariatur tenetur ipsum eveniet cum explicabo nobis excepturi cupiditate nisi!</div>
-            <div class="section_buttons">
+            <div class="section_buttons center">
                 <div class="theme_button black oblique_right">
                     <a href="tel:<?php echo $phone ?>">Call NOW</a>
                 </div>
@@ -543,7 +572,7 @@
             <div class="column">
                 <div class="logo">
                     <a href="">
-                        <img src="images/logo.png" alt="">
+                        <img src="images/logo_footer.png" alt="">
                     </a>
                 </div>
                 <div class="footer_contact_info">

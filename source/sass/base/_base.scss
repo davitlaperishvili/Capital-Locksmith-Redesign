@@ -4,7 +4,7 @@ body{
 	font-size: 16px;
 	font-family: $ffbase, sans-serif;
 	font-weight: 400;
-	line-height: 1.5;
+	line-height: 27px;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -125,38 +125,87 @@ div.container{
 	margin-bottom: 25px;
 	font-size: 50px;
 	font-weight: 700;
+	line-height: 1.5;
 }
 .page_subtitle{
 	margin-bottom: 30px;
 	font-size: 42px;
 	color: $ccorp;
+	line-height: 1.5;
 }
 .section_title{
 	margin-bottom: 15px;
 	font-size: 22px;
 	color: $ccorp;
 	font-weight: 700;
+	line-height: 1.5;
+	&.center{
+		text-align: center;
+	}
 }
 .subtitle{
 	margin-bottom: 15px;
 	font-size: 36px;
 	font-weight: 700;
 	color: $cdark;
-}
-.section_text{
-	font-size: 16px;
+	line-height: 1.5;
 	&.center{
 		text-align: center;
+	}
+	&.white{
+		color: $cwhite;
+	}
+}
+.section_text{
+	margin-bottom: 25px;
+	font-size: 16px;
+	max-width: 970px;
+	&.center{
+		text-align: center;
+		margin: 0 auto
 	}
 }
 .section_list{
 	ul{
 		@extend .no-list;
 		li{
-
+			display: flex;
+			align-items: center;
+			margin-bottom: 15px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			&:before{
+				content: '';
+				display: block;
+				width: 16px;
+				height: 16px;
+				background-color: $ccorp;
+				margin-right: 10px;
+				clip-path: polygon(100% 50%, 0 0, 0 100%);
+			}
+		}
+	}
+	&.with_line{
+		ul{
+			padding-left: 24px;
+			&:before{
+				@extend .overlay;
+				width: 5px;
+				background-color: $cmain;
+			}
 		}
 	}
 }
+
+@keyframes pinAnim {
+	0% {transform: translateY(0);}
+	25% {transform: translateY(3px);}
+	50% {transform: translateY(0);}
+	75% {transform: translateY(-3px);}
+	100% {transform: translateY(0);}
+}
+
 .theme_button{
 	a{
 		display: inline-flex;
@@ -168,8 +217,12 @@ div.container{
 		text-transform: uppercase;
 		background-color: $ccorp;
 		color: $cwhite;
+		transition: all 0.4s;
 		i{
 			margin-right: 10px;
+		}
+		&:hover{
+			background-color: lighten($ccorp, 15);
 		}
 	}
 	&.gray{
@@ -177,24 +230,36 @@ div.container{
 			background-color: transparent;
 			background-image: linear-gradient(to right, #DDDDDD,#CECECE);
 			color: $cdark;
+			&:hover{
+				background-color: transparent
+			}
 		}
 	}
 	&.black{
 		a{
 			background-color: $cdark;
 			color: $cwhite;
+			&:hover{
+				background-color: lighten($cdark, 15);
+			}
 		}
 	}
 	&.oblique_both{
 		a{
 			padding: 10px 45px;
 			clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+			&:hover{
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+			}
 		}
 	}
 	&.oblique_right{
 		a{
 			padding: 10px 45px 10px 25px;
 			clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+			&:hover{
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+			}
 		}
 	}
 	&.text{
@@ -212,6 +277,13 @@ div.container{
 				background-color: $ccorp;
 				color: $cwhite;
 				font-size: 16px;
+				transition: 0.4s;
+			}
+			&:hover{
+				background-color: transparent;
+				i{
+					transform: translateX(5px);
+				}
 			}
 		}
 		&.black{
@@ -236,3 +308,4 @@ div.container{
 		justify-content: center;
 	}
 }
+
