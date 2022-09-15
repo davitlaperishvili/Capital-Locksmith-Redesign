@@ -14,7 +14,7 @@
             <div class="section_left">
                 <h2 class="section_title"><?php echo $section_title ?></h2>
                 <h3 class="subtitle"><?php echo $section_subtitle ?></h3>
-                <div class="section_text"><?php echo $$section_text ?></div>
+                <div class="section_text"><?php echo $section_text ?></div>
                 <div class="section_list">
                     <ul>
                         <?php 

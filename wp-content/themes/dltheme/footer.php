@@ -4,6 +4,9 @@
 	$email = get_field('email', 'option');
 	$workingHours = get_field('workingHours', 'option');
 	$address = get_field('address', 'option');
+	$copyright = get_field('copyright', 'option');
+	$footer_text = get_field('footer_text', 'option');
+	$footer_menu = get_field('footer_menu', 'option');
 	
 ?>
 <footer class="trans-all-4 site_footer">
@@ -48,33 +51,42 @@
                     </ul>
                 </div>
             </div> -->
-            <div class="column">
-                <div class="footer_text">
-                    <div class="text_title">About Us</div>
-                    <div class="text_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam labore, nihil numquam quidem molestiae earum sit odit! Cupiditate neque blanditiis illo doloribus distinctio dignissimos nesciunt debitis maxime nihil enim, amet perspiciatis modi ipsa, nemo, tenetur mollitia maiores voluptas officiis molestias?</div>
-                </div>
-            </div>
+            <?php 
+                if($footer_text['text']){
+                    ?>
+                        <div class="column">
+                            <div class="footer_text">
+                                <div class="text_title"><?php echo $footer_text['title'] ?></div>
+                                <div class="text_content"><?php echo $footer_text['text'] ?></div>
+                            </div>
+                        </div>
+                    <?php
+                }
+            ?>
         </div>
+        <?php 
+            if($footer_menu) {
+                ?>
+                    <div class="footer_full_width_block">
+                        <div class="footer_menu">
+                            <ul>
+                                <?php 
+                                    foreach($footer_menu as $item) {
+                                        ?>  
+                                            <li>
+                                                <a href="<?php echo $item['menu_item_url'] ?>"><?php echo $item['menu_item_text'] ?></a>
+                                            </li>
+                                        <?php
+                                    }
+                                ?>
+                            </ul>
+                        </div>
+                    </div>
+                <?php
+            }
+        ?>
         <div class="footer_full_width_block">
-            <div class="footer_menu">
-                <ul>
-                    <li>
-                        <a href="">About us</a>
-                    </li>
-                    <li>
-                        <a href="">Services</a>
-                    </li>
-                    <li>
-                        <a href="">Contact us</a>
-                    </li>
-                    <li>
-                        <a href="">Privacy Policy</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer_full_width_block">
-            <div class="copyright">Copyright © capital-locksmith.net. All rights reserved.</div>
+            <div class="copyright"><?php echo $copyright ?></div>
         </div>
     </div>
 </footer>
