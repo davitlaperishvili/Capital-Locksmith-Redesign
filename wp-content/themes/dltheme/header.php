@@ -66,10 +66,7 @@
                 <div class="header_top_right">
                     <ul>
                         <li>
-                            <a href="#content5">Reviews</a>
-                        </li>
-                        <li>
-                            <a href="#">Pricing</a>
+                            <a href="#content6">Reviews</a>
                         </li>
                     </ul>
                 </div>

@@ -46,7 +46,8 @@ section.hero{
                 transform: translateX(calc(-100vw + Min(calc(85vw - 2rem), 90rem)));
                 z-index: 3;
                 @media(max-width: 1024px){
-                    width: calc(100% + 136px);
+                    width: calc(100% + 32px);
+                    transform: translateX(-16px);
                     bottom: -40px;
                     clip-path: polygon(0 0, 97% 0%, 65% 100%, 0% 100%);
                 }
@@ -62,7 +63,8 @@ section.hero{
                 transform: translateX(calc(-100vw + Min(calc(85vw - 2rem), 90rem)));
                 z-index: 2;
                 @media(max-width: 1024px){
-                    width: calc(100% + 136px);
+                    width: calc(100% + 32px);
+                    transform: translateX(-16px);
                     bottom: -40px;
                     clip-path: polygon(0 0, 96% 0%, 65% 100%, 0% 100%);
                 }
@@ -83,7 +85,8 @@ section.hero{
                     width: calc(100% + 180px);
                     z-index: 2;
                     @media(max-width: 1024px){
-                        width: calc(100% + 80px);
+                        width: calc(100%);
+                        transform: translateX(-16px);
                     }
                 }
                 &:after{
@@ -94,7 +97,8 @@ section.hero{
                     width: calc(100% + 180px);
                     z-index: 1;
                     @media(max-width: 1024px){
-                        width: calc(100% + 80px);
+                        width: calc(100%);
+                        transform: translateX(-16px);
                     }
                 }
                 .text_wrap{

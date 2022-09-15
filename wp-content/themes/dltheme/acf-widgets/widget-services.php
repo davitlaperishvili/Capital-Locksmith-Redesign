@@ -20,6 +20,9 @@
                                     </figure>
                                     <div class="service_title"><?php echo $service['service_title'] ?></div>
                                     <div class="service_desc"><?php echo $service['service_text'] ?></div>
+                                    <div class="theme_button oblique_right">
+                                        <a href="tel:<?php echo $phone ?>">Call Us</a>
+                                    </div>
                                 </div>
                             <?php
                         }
