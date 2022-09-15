@@ -39,7 +39,7 @@
                                                     <div class="theme_button text black">
                                                         <a href="<?php echo $hero_second_button_url?>">
                                                             <i class="ri-arrow-right-line"></i>
-                                                            <span>G<?php echo $hero_second_button_text?></span>
+                                                            <span><?php echo $hero_second_button_text?></span>
                                                         </a>
                                                     </div>
                                                 <?php

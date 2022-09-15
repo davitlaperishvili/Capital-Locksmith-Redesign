@@ -66,7 +66,7 @@
                 <div class="header_top_right">
                     <ul>
                         <li>
-                            <a href="#">Reviews</a>
+                            <a href="#content5">Reviews</a>
                         </li>
                         <li>
                             <a href="#">Pricing</a>
@@ -81,23 +81,15 @@
                     </a>
                 </div>
                 <div class="header_menu">
-                    <nav class="navigation">
-                        <ul class="">
-                            <li>
-                                <a href="">About Us</a>
-                            </li>
-                            <li>
-                                <a href="">Blog</a>
-                            </li>
-                            <li>
-                                <a href="">Locksmith Services</a>
-                            </li>
-                            <li>
-                                <a href="">Contacts</a>
-                            </li>
-
-                        </ul>
-                    </nav>
+                    <?php
+                        wp_nav_menu([
+                            'theme_location'	=> 'header_menu',
+                            'menu'				=> 'header_menu', 
+                            'container'			=> 'nav',
+                            'container_class'	=> 'navigation',
+                            'menu_class'		=> 'navigation'
+                        ]);
+                    ?>
                 </div>
                 <div class="header_button">
                     <div class="theme_button oblique_both">
