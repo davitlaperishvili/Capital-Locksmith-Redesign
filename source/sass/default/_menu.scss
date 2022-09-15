@@ -129,7 +129,7 @@ div.resp_menu{
 	right: 15px;
 	z-index: 1000;
 	@media(max-width: 1024px){
-		display: block;
+		//display: block;
 	}
 	div.resp_menu_toggle{
 		@extend .trans-all-4;

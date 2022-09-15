@@ -3,9 +3,15 @@ section.reviews{
     grid-gap: 50px;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 170px;
+    @media(max-width: 1024px){
+        grid-gap: 15px;
+    }
     figure{
         width: 100%;
         height: 600px;
+        @media(max-width: 1024px){
+            height: 325px;
+        }
         img{
             width: 100%;
             height: 100%;
@@ -16,11 +22,17 @@ section.reviews{
         padding-top: 56px;
         max-width: 50vw;
         z-index: 2;
+        @media(max-width: 1024px){
+            position: static;
+        }
         .section_title{
 
         }
         .subtitle{
             margin-bottom: 50px;
+            @media(max-width: 1024px){
+                margin-bottom: 25px;
+            }
         }
         .reviews_list{
             padding: 100px 200px;
@@ -28,6 +40,13 @@ section.reviews{
             clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
             width: calc(100% + 300px);
             transform: translateX(-300px);
+            @media(max-width: 1024px){
+                transform: translateX(0);
+                width: calc(100vw - 16px);
+                padding: 15px 16px 15px 60px;
+                position: absolute;
+                left: 16px;
+            }
             .reviews_slider{
                 .swiper-slide{
                     .review_item{

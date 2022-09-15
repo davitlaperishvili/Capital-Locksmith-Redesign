@@ -1,5 +1,8 @@
 section.hero{
     margin-bottom: 140px;
+    @media(max-width: 1024px){
+        margin-bottom: 90px;
+    }
     figure.section_bg{
         @extend .overlay;
         z-index: 2;
@@ -17,6 +20,9 @@ section.hero{
         right: 0;
         background-color: $ccorp;
         width: 100%;
+        @media(max-width: 1024px){
+            bottom: -40px;
+        }
     }
     .container{
         z-index: 3;
@@ -25,15 +31,25 @@ section.hero{
             grid-template-columns: 1fr 1fr;
             align-items: center;
             padding: 80px 0;
+            @media(max-width: 1024px){
+                grid-template-columns: 1fr;
+                padding: 30px 0 120px;
+            }
             &:before{
                 @extend .overlay;
                 background-color: rgba($cmain, 0.15);
                 top: unset;
                 bottom: -65px;
                 left: -55px;
+                width: calc(100% + 170px);
                 clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
                 transform: translateX(calc(-100vw + Min(calc(85vw - 2rem), 90rem)));
                 z-index: 3;
+                @media(max-width: 1024px){
+                    width: calc(100% + 136px);
+                    bottom: -40px;
+                    clip-path: polygon(0 0, 97% 0%, 65% 100%, 0% 100%);
+                }
             }
             &:after{
                 @extend .overlay;
@@ -41,34 +57,85 @@ section.hero{
                 top: unset;
                 bottom: -65px;
                 left: -50px;
+                width: calc(100% + 170px);
                 clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
                 transform: translateX(calc(-100vw + Min(calc(85vw - 2rem), 90rem)));
                 z-index: 2;
+                @media(max-width: 1024px){
+                    width: calc(100% + 136px);
+                    bottom: -40px;
+                    clip-path: polygon(0 0, 96% 0%, 65% 100%, 0% 100%);
+                }
             }
             .hero_text{
                 text-align: center;
                 position: static;
                 z-index: 4;
+                @media(max-width: 1024px){
+                    text-align: start;
+                    width: 84%;
+                }
                 &:before{
                     @extend .overlay;
                     background-image: linear-gradient(to bottom, rgba(#252424, 0.4), rgba(#6D6C6C, 0));
                     clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
                     transform: translateX(calc(-100vw + Min(calc(85vw - 2rem), 90rem)));
+                    width: calc(100% + 180px);
                     z-index: 2;
+                    @media(max-width: 1024px){
+                        width: calc(100% + 80px);
+                    }
                 }
                 &:after{
                     @extend .overlay;
                     background-color: $cwhite;
                     clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
                     transform: translateX(calc(-100vw + Min(calc(85vw - 2rem), 90rem)));
+                    width: calc(100% + 180px);
                     z-index: 1;
+                    @media(max-width: 1024px){
+                        width: calc(100% + 80px);
+                    }
                 }
                 .text_wrap{
                     z-index: 3;
+                    .section_text{
+                        @media(max-width: 1024px){
+                            text-align: start;
+                        }
+                    }
+                    .section_buttons {
+                        @media(max-width: 1024px){
+                            align-items: flex-start;
+                            .theme_button{
+                                margin-right: 0;
+                                margin-bottom: 15px;
+                                &:last-child{
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             figure.car{
                 z-index: 5;
+                @media(max-width: 1024px){
+                    position: absolute;
+                    width: 250px;
+                    height: 180px;
+                    bottom: 0;
+                    right: -16px;
+                    overflow: hidden;
+                }
+                img{
+                    @media(max-width: 1024px){
+                        right: -20px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
             }
         }
     }

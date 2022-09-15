@@ -2,10 +2,18 @@ section.areas{
     margin-bottom: 170px;
     padding: 60px 0;
     background-color: $cread;
+    @media(max-width: 1024px){
+        margin-bottom: 50px;
+        padding: 50px 0;
+    }
     .container{
         display: grid;
         grid-gap: 70px;
         grid-template-columns: 1fr 1fr 1fr;
+        @media(max-width: 1024px){
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+        }
     }
     figure{
         margin: auto 0;
@@ -22,6 +30,9 @@ section.areas{
             display: grid;
             grid-gap: 20px 80px;
             grid-template-columns: repeat(2, 1fr);
+            @media(max-width: 1024px){
+                grid-gap: 20px 40px;
+            }
             li{
                 a{
                     display: flex;

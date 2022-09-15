@@ -11,6 +11,9 @@ header.site_header{
                 clip-path: inset(0 -100vmax);
                 color: $cwhite;
                 .header_top_left{
+                    @media(max-width: 1024px){
+                        display: none;
+                    }
                     ul{
                         @extend .no-list;
                         display: flex;
@@ -32,6 +35,9 @@ header.site_header{
                     }
                 }
                 .header_top_right{
+                    @media(max-width: 1024px){
+                        display: none;
+                    }
                     ul{
                         @extend .no-list;
                         display: flex;
@@ -59,6 +65,9 @@ header.site_header{
                     justify-content: flex-start;
                     a{
                         img{
+                            @media(max-width: 1024px){
+                                width: 100px;
+                            }
     
                         }
                     }
@@ -69,9 +78,18 @@ header.site_header{
                 .header_button{
                     .theme_button{
                         a{
-                            padding: 10px 75px;
+                            padding: 10px 65px;
+                            width: 290px;
+                            font-size: 15px;
+                            @media(max-width: 1024px){
+                                padding: 5px 40px;
+                                line-height: 18px;
+                            }
                             i{
                                 font-size: 30px;
+                                @media(max-width: 1024px){
+                                    font-size: 20px;
+                                }
                             }
                         }
                     }

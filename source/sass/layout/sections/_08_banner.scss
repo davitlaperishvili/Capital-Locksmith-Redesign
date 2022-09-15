@@ -1,5 +1,8 @@
 section.banner{
     padding: 60px 0 90px;
+    @media(max-width: 1024px){
+        padding: 40px 0 60px;
+    }
     figure{
         @extend .overlay;
         img{
@@ -13,6 +16,21 @@ section.banner{
             margin-bottom: 25px;
             font-size: 36px;
             text-align: center;
+            @media(max-width: 1024px){
+                font-size: 24px ;
+            }
+        }
+        .section_buttons{
+            
+            @media(max-width: 1024px){
+                .theme_button{
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
         }
     }
 }
